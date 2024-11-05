@@ -1,9 +1,8 @@
 package org.example.solid.principles;
 
-public class Cube implements Shape {
-
+public class Rectangle implements Shape {
     @Override
     public double area() {
-        return 100;
+        return 20;
     }
 }

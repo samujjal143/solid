@@ -4,18 +4,10 @@ import java.util.List;
 
 public class AreaCalculator {
 
-    public int sum(List<Object> shapes) {
+    public int sum(List<Shape> shapes) {
         int sum = 0;
-        for (Object shape : shapes) {
-            if (shape instanceof Square) {
-                sum += Math.pow(((Square) shape).getLength(), 2);
-            }
-            if (shape instanceof Circle) {
-                sum += Math.PI * Math.pow(((Circle) shape).getRadius(), 2);
-            }
-            if (shape instanceof Cube) {
-
-            }
+        for (Shape shape : shapes) {
+            sum += shape.area();
         }
         return sum;
     }
