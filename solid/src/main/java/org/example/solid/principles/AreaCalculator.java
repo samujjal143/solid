@@ -13,15 +13,10 @@ public class AreaCalculator {
             if (shape instanceof Circle) {
                 sum += Math.PI * Math.pow(((Circle) shape).getRadius(), 2);
             }
+            if (shape instanceof Cube) {
+
+            }
         }
         return sum;
-    }
-
-    public String json(List<Object> shapes) {
-        return "{sum: %s}".formatted(sum(shapes));
-    }
-
-    public String csv(List<Object> shapes) {
-        return "sum, %s".formatted(sum(shapes));
     }
 }
