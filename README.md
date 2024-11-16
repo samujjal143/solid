@@ -7,3 +7,5 @@
 4. INTERFACE SEGREGATION PRINCIPLE - Interfaces should not force classes to implement what they can’t do. Large interfaces should be divided into small ones.
 
 5. DEPENDENCY INVERSION PRINCIPLE - Components should depend on abstractions, not on concretions.
+
+~ CREDIT: amigoscode
