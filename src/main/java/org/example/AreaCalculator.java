@@ -11,7 +11,13 @@ public class AreaCalculator {
                 sum += Math.pow(((Square) shape).getLength(), 2);
             } else if (shape instanceof Circle) {
                 sum += Math.PI * Math.pow(((Circle) shape).getRadius(), 2);
+            } else if (shape instanceof Cube) {
+
             }
+            /* Open Closed Principle is violated because we are modifying an existing class
+               each time we are having a new shape. If we have 10 extra shapes, we'll have a
+               bunch of if-else statement
+             */
         }
         return sum;
     }
