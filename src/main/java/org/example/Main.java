@@ -9,6 +9,8 @@ public class Main {
         Square square = new Square(10);
         List<Object> shapes = List.of(circle, square);
         int sum = areaCalculator.sum(shapes);
-        System.out.println(areaCalculator.json(shapes));
+        ShapesPrinter shapesPrinter = new ShapesPrinter();
+        System.out.println(shapesPrinter.json(sum));
+        System.out.println(shapesPrinter.csv(sum));
     }
 }

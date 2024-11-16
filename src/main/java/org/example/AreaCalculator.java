@@ -15,12 +15,4 @@ public class AreaCalculator {
         }
         return sum;
     }
-
-    public String json(List<Object> shapes) {
-        return "{sum: %s}".formatted(sum(shapes));
-    }
-
-    /* AreaCalculator has 2 methods - sum() and json() which serve 2 different purpose
-       and that breaks the Single Responsibility Principle.
-     */
 }
