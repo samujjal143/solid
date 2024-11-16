@@ -8,7 +8,11 @@ public class Main {
         Circle circle = new Circle(10);
         Square square = new Square(10);
         Cube cube = new Cube();
-        List<Shape> shapes = List.of(circle, square, cube);
+        NoShape noShape = new NoShape();
+        List<Shape> shapes = List.of(circle, square, cube, noShape);
+        /* The class NoShape cannot calculate the area. We are violating the Liskov
+           Substitution Principle because NoShape is not substitutable for Shape.
+         */
         int sum = areaCalculator.sum(shapes);
         ShapesPrinter shapesPrinter = new ShapesPrinter();
         System.out.println(shapesPrinter.json(sum));
